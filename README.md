@@ -1,2 +1,2 @@
 # ANGULAR
-angular registeration
+angular6 registeration app
