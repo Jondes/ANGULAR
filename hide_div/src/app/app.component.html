@@ -1,0 +1,19 @@
+<div>
+  <h2>Angular Show/Hide Div on Radio Button Click</h2>
+  <label>
+    <input [value]="1" [(ngModel)]="sh" name="sh" type="radio" [checked]="isChecked" /> Adams
+  </label>
+  <label>
+    <input [value]="0" [(ngModel)]="sh" name="sh" type="radio" [checked]="!isChecked" /> Johnas
+  </label>
+  <label>
+    <input [value]="2" [(ngModel)]="sh" name="sh" type="radio" [checked]="isChecked" /> Franco
+  </label>
+  <label>
+    <input [value]="3" [(ngModel)]="sh" name="sh" type="radio" [checked]="!isChecked" /> Johnson
+  </label>
+  <div class="text-center purple" *ngIf="sh == 1">Adams</div>
+  <div class="text-center red" *ngIf="sh == 0">Johnas</div>
+  <div class="text-center blue" *ngIf="sh == 2">Franco</div>
+  <div class="text-center yelow" *ngIf="sh == 3">Johnson</div>
+</div>
